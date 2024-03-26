@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+
 #header {
-    background-color: #764134;
+    background-color: #B49A67;
+    font-family: "Lacquer", system-ui;
+    margin: 0 auto;
+    margin-top: -3vh;
+    height: 10vh;
 }

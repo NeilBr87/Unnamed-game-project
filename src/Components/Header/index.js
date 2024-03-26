@@ -4,7 +4,7 @@ export default function Container() {
 
     return (
         <div id="header">
-            <h2>Havenwood</h2>
+            <h2 style={{paddingTop: '3vh'}}>Havenwood</h2>
         </div>
     );
 }

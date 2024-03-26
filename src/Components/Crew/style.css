@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Gloria+Hallelujah&family=Lacquer&family=Shadows+Into+Light&family=Walter+Turncoat&display=swap');
+body {
+    font-family: "Walter Turncoat", cursive;
+
+}
+
+.profile {
+    width: 14vw;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6vw;
+    margin-top: 1vh;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+}
+
+.fields {
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+#crewBox {
+    background-color: #B49A67;
+    width: 86vw;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-bottom: 5vh;
+    padding-bottom: 2vh;
+}
