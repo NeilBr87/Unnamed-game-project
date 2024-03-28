@@ -30,6 +30,13 @@ body {
     font-size: 14px;
 }
 
+.items {
+    margin: 0 auto;
+    font-size: 14px;
+    border: 2px inset black;
+    border-radius: 25px;
+}
+
 #crewBox {
     background-color: #B49A67;
     width: 86vw;
@@ -38,3 +45,5 @@ body {
     margin-bottom: 5vh;
     padding-bottom: 2vh;
 }
+
+
