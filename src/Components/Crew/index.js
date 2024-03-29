@@ -13,16 +13,16 @@ export default function Crew() {
                 <img className="profile" src={Bobby} alt="bobby"></img>
                 <div className="column">
                     <p className="fields">Name</p>
-                    <p className="items">Bobby</p>
+                    <p className="names">Bobby</p>
                 </div>
                 <div className="column">
                     <p className="fields">Mood</p>
-                    <p className="items">Calm</p>
+                    <p className="calm">Calm</p>
                 </div>
 
                 <div className="column">
                     <p className="fields">Assignment</p>
-                    <p className="items">Idle</p>
+                    <p className="idle">Idle</p>
                 </div>
             </div>
 
@@ -30,16 +30,16 @@ export default function Crew() {
                 <img className="profile" src={Johnny} alt="bobby"></img>
                 <div className="column">
                     <p className="fields">Name</p>
-                    <p className="items">Johnny</p>
+                    <p className="names">Johnny</p>
                 </div>
                 <div className="column">
                     <p className="fields">Mood</p>
-                    <p className="items">Calm</p>
+                    <p className="calm">Calm</p>
                 </div>
 
                 <div className="column">
                     <p className="fields">Assignment</p>
-                    <p className="items">Idle</p>
+                    <p className="idle">Idle</p>
                 </div>
             </div>
 
@@ -47,16 +47,16 @@ export default function Crew() {
                 <img className="profile" src={Pete} alt="bobby"></img>
                 <div className="column">
                     <p className="fields">Name</p>
-                    <p className="items">Pete</p>
+                    <p className="names">Pete</p>
                 </div>
                 <div className="column">
                     <p className="fields">Mood</p>
-                    <p className="items">Calm</p>
+                    <p className="calm">Calm</p>
                 </div>
 
                 <div className="column">
                     <p className="fields">Assignment</p>
-                    <p className="items">Idle</p>
+                    <p className="idle">Idle</p>
                 </div>
             </div>
 
@@ -64,16 +64,16 @@ export default function Crew() {
                 <img className="profile" src={Lyle} alt="bobby"></img>
                 <div className="column">
                     <p className="fields">Name</p>
-                    <p className="items">Lyle</p>
+                    <p className="names">Lyle</p>
                 </div>
                 <div className="column">
                     <p className="fields">Mood</p>
-                    <p className="items">Calm</p>
+                    <p className="calm">Calm</p>
                 </div>
 
                 <div className="column">
                     <p className="fields">Assignment</p>
-                    <p className="items">Idle</p>
+                    <p className="idle">Idle</p>
                 </div>
             </div>
 
