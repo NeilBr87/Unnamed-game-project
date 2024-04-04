@@ -29,3 +29,31 @@ p {
     align-items: center;
     color: white;
 }
+
+.safe {
+    margin: 0 auto;
+    font-size: 14px;
+    border: 2px inset black;
+    border-radius: 25px;
+    padding: 3px 6px 3px 6px;
+    background-color: rgba(70, 150, 70, 0.5);
+}
+
+.danger {
+    margin: 0 auto;
+    font-size: 14px;
+    border: 2px inset black;
+    border-radius: 25px;
+    padding: 3px 6px 3px 6px;
+    background-color: red;
+}
+
+.lost {
+    margin: 0 auto;
+    font-size: 14px;
+    border: 2px inset black;
+    border-radius: 25px;
+    padding: 3px 6px 3px 6px;
+    background-color: black;
+    color: red;
+}
