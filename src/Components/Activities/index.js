@@ -190,6 +190,24 @@ export default function Crew(props) {
 
 
     function unassignBobby() {
+        if (props.wrightBobby === true) {
+            props.wrightPatrollers = props.wrightPatrollers - 1
+        }
+        if (props.mainBobby === true) {
+            props.mainPatrollers = props.mainPatrollers - 1
+        }
+        if (props.colverBobby === true) {
+            props.colverPatrollers = props.colverPatrollers - 1
+        }
+        if (props.braxtonBobby === true) {
+            props.braxtonPatrollers = props.braxtonPatrollers - 1
+        }
+        if (props.jeffersonBobby === true) {
+            props.jeffersonPatrollers = props.jeffersonPatrollers - 1
+        }
+        if (props.booniesBobby === true) {
+            props.booniesPatrollers = props.booniesPatrollers - 1
+        }
         props.setWrightBobby(false)
         props.setMainBobby(false)
         props.setColverBobby(false)
@@ -197,6 +215,7 @@ export default function Crew(props) {
         props.setJeffersonBobby(false)
         props.setBooniesBobby(false)
         props.setBobbyAssignment("idle")
+        
     }
 
     function unassignJohnny() {
