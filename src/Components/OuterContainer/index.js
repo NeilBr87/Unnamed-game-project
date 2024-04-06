@@ -53,7 +53,7 @@ export default function OuterContainer() {
     const [jeffersonPete, setJeffersonPete] = useState(false);
     const [jeffersonLyle, setJeffersonLyle] = useState(false);
 
-    const [wrightDays, setWrightDays] = useState(7)
+    const [wrightDays, setWrightDays] = useState(0)
     const [wrightStatus, setWrightStatus] = useState("calm")
     const [mainDays, setMainDays] = useState(0)
     const [mainStatus, setMainStatus] = useState("calm")
@@ -88,8 +88,45 @@ export default function OuterContainer() {
         if (mainDays > 6) {
             setMainStatus("lost")
         }
+        if (colverDays < 3) {
+            setColverStatus("safe")
+        }
+        if (colverDays > 3 && colverDays < 7) {
+            setColverStatus("dangerous")
+        }
+        if (colverDays > 6) {
+            setColverStatus("lost")
+        }
+        if (braxtonDays < 3) {
+            setBraxtonStatus("safe")
+        }
+        if (braxtonDays > 3 && braxtonDays < 7) {
+            setBraxtonStatus("dangerous")
+        }
+        if (braxtonDays > 6) {
+            setBraxtonStatus("lost")
+        }
+        if (booniesDays < 3) {
+            setBooniesStatus("safe")
+        }
+        if (booniesDays > 3 && booniesDays < 7) {
+            setBooniesStatus("dangerous")
+        }
+        if (booniesDays > 6) {
+            setBooniesStatus("lost")
+        }
+        if (jeffersonDays < 3) {
+            setJeffersonStatus("safe")
+        }
+        if (jeffersonDays > 3 && jeffersonDays < 7) {
+            setJeffersonStatus("dangerous")
+        }
+        if (jeffersonDays > 6) {
+            setJeffersonStatus("lost")
+        }
 
-      }, [wrightDays, mainDays]);
+
+      }, [wrightDays, mainDays, colverDays, braxtonDays, booniesDays, jeffersonDays]);
 
     // Moon controls 
 
@@ -115,16 +152,36 @@ export default function OuterContainer() {
         if (daysTilFullMoon < 5 && daysTilFullMoon > 0) {
             setLunarPhase("Waxing Gibbous")
         }
-        if (daysTilFullMoon === 0) {
+        if (daysTilFullMoon === 0) { 
             setLunarPhase("Full Moon")
         }
       }
     , [daysTilFullMoon]);
 
+    // Assignments
+
+    const [bobbyAssignment, setBobbyAssignment] = useState("idle")
+    const [johnnyAssignment, setJohnnyAssignment] = useState("idle")
+    const [peteAssignment, setPeteAssignment] = useState("idle")
+    const [lyleAssignment, setLyleAssignment] = useState("idle")
+      
+    // Number management - don't forget to reset
+
+    const [wrightPatrollers, setWrightPatrollers] = useState(0)
+    const [mainPatrollers, setMainPatrollers] = useState(0)
+    const [colverPatrollers, setColverPatrollers] = useState(0)
+    const [braxtonPatrollers, setBraxtonPatrollers] = useState(0)
+    const [booniesPatrollers, setBooniesPatrollers] = useState(0)
+    const [jeffersonPatrollers, setJeffersonPatrollers] = useState(0)
+
     return (
 
 
 <Container 
+    bobbyAssignment={bobbyAssignment} setBobbyAssignment={setBobbyAssignment}
+    johnnyAssignment={johnnyAssignment} setJohnnyAssignment={setJohnnyAssignment}
+    peteAssignment={peteAssignment} setPeteAssignment={setPeteAssignment}
+    lyleAssignment={lyleAssignment} setLyleAssignment={setLyleAssignment}
     bobbyMood={bobbyMood} setBobbyMood={setBobbyMood} 
     bobbyUsed={bobbyUsed} setBobbyUsed={setBobbyUsed} 
     johnnyMood={johnnyMood} setJohnnyMood={setJohnnyMood} 
@@ -172,6 +229,13 @@ export default function OuterContainer() {
     day={day} setDay={setDay}
     daysTilFullMoon={daysTilFullMoon} setDaysTilFullMoon={setDaysTilFullMoon}
     lunarPhase={lunarPhase} setLunarPhase={setLunarPhase}
+    wrightPatrollers={wrightPatrollers} setWrightPatrollers={setWrightPatrollers}
+    mainPatrollers={mainPatrollers} setMainPatrollers={setMainPatrollers}
+    colverPatrollers={colverPatrollers} setColverPatrollers={setColverPatrollers}
+    braxtonPatrollers={braxtonPatrollers} setBraxtonPatrollers={setBraxtonPatrollers}
+    booniesPatrollers={booniesPatrollers} setBooniesPatrollers={setBooniesPatrollers}
+    jeffersonPatrollers={jeffersonPatrollers} setJeffersonPatrollers={setJeffersonPatrollers}
+    
 />
     )
 }

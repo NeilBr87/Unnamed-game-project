@@ -24,7 +24,8 @@ export default function Crew(props) {
 
                 <div className="column">
                     <p className="fields">Assignment</p>
-                    <p className="idle">Idle</p>
+                    {props.bobbyAssignment === "idle" && <p className="idle">Idle</p>}
+                    {props.bobbyAssignment === "patrol" && <p className="names">On patrol</p>}
                 </div>
             </div>
 
@@ -43,7 +44,8 @@ export default function Crew(props) {
 
                 <div className="column">
                     <p className="fields">Assignment</p>
-                    <p className="idle">Idle</p>
+                    {props.johnnyAssignment === "idle" && <p className="idle">Idle</p>}
+                    {props.johnnyAssignment === "patrol" && <p className="names">On patrol</p>}
                 </div>
             </div>
 
@@ -62,7 +64,8 @@ export default function Crew(props) {
 
                 <div className="column">
                     <p className="fields">Assignment</p>
-                    <p className="idle">Idle</p>
+                    {props.peteAssignment === "idle" && <p className="idle">Idle</p>}
+                    {props.peteAssignment === "patrol" && <p className="names">On patrol</p>}
                 </div>
             </div>
 
@@ -81,7 +84,8 @@ export default function Crew(props) {
 
                 <div className="column">
                     <p className="fields">Assignment</p>
-                    <p className="idle">Idle</p>
+                    {props.lyleAssignment === "idle" && <p className="idle">Idle</p>}
+                    {props.lyleAssignment === "patrol" && <p className="names">On patrol</p>}
                 </div>
             </div>
 

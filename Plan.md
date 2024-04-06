@@ -1,0 +1,4 @@
+- Set up different decline rate based on lunar phase
+- CYOA segments
+- End day summaries
+- Reset everything per turn
