@@ -4,6 +4,12 @@ import Container from '../Container'
 export default function OuterContainer() {
 
     // Control panel
+
+    // Game stats
+
+    const [day, setDay] = useState(1)
+    const [daysTilFullMoon, setDaysTilFullMoon] = useState(30)
+    const [lunarPhase, setLunarPhase] = useState("Waning Gibbous")
     
     // Crew stats
 
@@ -73,8 +79,47 @@ export default function OuterContainer() {
         if (wrightDays > 6) {
             setWrightStatus("lost")
         }
+        if (mainDays < 3) {
+            setMainStatus("safe")
+        }
+        if (mainDays > 3 && mainDays < 7) {
+            setMainStatus("dangerous")
+        }
+        if (mainDays > 6) {
+            setMainStatus("lost")
+        }
 
-      }, [wrightDays]);
+      }, [wrightDays, mainDays]);
+
+    // Moon controls 
+
+    useEffect(() => {
+        if (daysTilFullMoon > 26) {
+            setLunarPhase("Waning Gibbous")
+        }
+        if (daysTilFullMoon < 26 && daysTilFullMoon > 22) {
+            setLunarPhase("Third Quarter")
+        }
+        if (daysTilFullMoon < 22 && daysTilFullMoon > 18) {
+            setLunarPhase("Waning Crescent")
+        }
+        if (daysTilFullMoon < 18 && daysTilFullMoon > 14) {
+            setLunarPhase("New Moon")
+        }
+        if (daysTilFullMoon < 14 && daysTilFullMoon > 10) {
+            setLunarPhase("Waxing Crescent")
+        }
+        if (daysTilFullMoon < 10 && daysTilFullMoon > 5) {
+            setLunarPhase("First Quarter")
+        }
+        if (daysTilFullMoon < 5 && daysTilFullMoon > 0) {
+            setLunarPhase("Waxing Gibbous")
+        }
+        if (daysTilFullMoon === 0) {
+            setLunarPhase("Full Moon")
+        }
+      }
+    , [daysTilFullMoon]);
 
     return (
 
@@ -124,6 +169,9 @@ export default function OuterContainer() {
     booniesStatus={booniesStatus} setBooniesStatus={setBooniesStatus} 
     jeffersonDays={jeffersonDays} setJeffersonDays={setJeffersonDays} 
     jeffersonStatus={jeffersonStatus} setJeffersonStatus={setJeffersonStatus} 
+    day={day} setDay={setDay}
+    daysTilFullMoon={daysTilFullMoon} setDaysTilFullMoon={setDaysTilFullMoon}
+    lunarPhase={lunarPhase} setLunarPhase={setLunarPhase}
 />
     )
 }

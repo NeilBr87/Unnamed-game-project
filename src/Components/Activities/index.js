@@ -3,6 +3,8 @@ import Bobby from '../Crew/Bobby.png'
 import Johnny from '../Crew/Johnny.png'
 import Pete from '../Crew/Pete.png'
 import Lyle from '../Crew/Lyle.png'
+import wright from './wright.png'
+import main from './main.png'
 import './style.css'
 export default function Crew(props) {
 
@@ -73,8 +75,10 @@ export default function Crew(props) {
         <div id="crewBox">
             <h4 style={{paddingTop: '2vh'}}>Locations</h4>
             
+            
             {/* Copyline */}
             <div className="column">
+                <img src={wright} alt="wright" style={{width: '30vw', height: '30vw', marginTop: '2vh'}}></img>
                 <h4 style={{marginTop: '0vh', fontSize: '16px'}}>Wright Intersection</h4>
                 <div className="row" style={{marginTop: '-5vh'}}>
                     <p>{props.wrightDays} day since patrol</p>
@@ -105,7 +109,8 @@ export default function Crew(props) {
 
         {/* Copyline */}
         <div className="column">
-                <h4 style={{marginTop: '0vh', fontSize: '16px'}}>Main Intersection</h4>
+                <img src={main} alt="main" style={{width: '30vw', height: '30vw', marginTop: '2vh'}}></img>
+                <h4 style={{marginTop: '0vh', fontSize: '16px'}}>Main Street</h4>
                 <div className="row" style={{marginTop: '-5vh'}}>
                     <p>{props.mainDays} day since patrol</p>
                     <p>Status:</p>

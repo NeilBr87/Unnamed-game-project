@@ -3,6 +3,7 @@ import Header from '../Header';
 import Map from './Map.JPG';
 import Crew from '../Crew'
 import Activities from '../Activities';
+import EndTurn from '../EndTurn';
 import './style.css'
 export default function Container(props) {
 
@@ -58,7 +59,15 @@ export default function Container(props) {
     booniesStatus={props.booniesStatus} setBooniesStatus={props.setBooniesStatus} 
     jeffersonDays={props.jeffersonDays} setJeffersonDays={props.setJeffersonDays} 
     jeffersonStatus={props.jeffersonStatus} setJeffersonStatus={props.setJeffersonStatus} 
+    day={props.day} setDay={props.setDay}
 />
+
+            <EndTurn 
+                day={props.day} setDay={props.setDay}
+                daysTilFullMoon={props.daysTilFullMoon} setDaysTilFullMoon={props.setDaysTilFullMoon}
+                />
+
+            <br></br>
         </div>
     );
 }
