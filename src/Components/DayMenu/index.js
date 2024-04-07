@@ -16,7 +16,7 @@ export default function DayMenu(props) {
             setMoonStatus("You are approaching the full moon - areas will take one day without patrol to become dangerous.")
         }
 
-    }
+    }, [props.daysTilFullMoon]
     )
 
     return (
