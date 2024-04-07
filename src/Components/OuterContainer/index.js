@@ -174,6 +174,8 @@ export default function OuterContainer() {
     const [booniesPatrollers, setBooniesPatrollers] = useState(0)
     const [jeffersonPatrollers, setJeffersonPatrollers] = useState(0)
 
+    // Risk management
+
     return (
 
 

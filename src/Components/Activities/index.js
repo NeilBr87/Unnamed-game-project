@@ -46,146 +46,145 @@ export default function Crew(props) {
     function wrightAssignBobby() {
         props.setWrightBobby(true)
         props.setBobbyAssignment("patrol")
-        props.wrightPatrollers = props.wrightPatrollers + 1
+        props.setWrightPatrollers(props.wrightPatrollers + 1)
     }
 
     function mainAssignBobby() {
         props.setMainBobby(true)
         props.setBobbyAssignment("patrol")
-        props.mainPatrollers = props.mainPatrollers + 1
-
+        props.setMainPatrollers(props.mainPatrollers + 1)
     }
 
     function wrightAssignJohnny() {
         props.setWrightJohnny(true)
         props.setJohnnyAssignment("patrol")
-        props.wrightPatrollers = props.wrightPatrollers + 1
+        props.setWrightPatrollers(props.wrightPatrollers + 1)
     }
 
     function mainAssignJohnny() {
         props.setMainJohnny(true)
         props.setJohnnyAssignment("patrol")
-        props.mainPatrollers = props.mainPatrollers + 1
+        props.setMainPatrollers(props.mainPatrollers + 1)
     }
 
     function wrightAssignPete() {
         props.setWrightPete(true)
         props.setPeteAssignment("patrol")
-        props.wrightPatrollers = props.wrightPatrollers + 1
+        props.setWrightPatrollers(props.wrightPatrollers + 1)
     }
 
     function mainAssignPete() {
         props.setMainPete(true)
         props.setPeteAssignment("patrol")
-        props.mainPatrollers = props.mainPatrollers + 1
+        props.setMainPatrollers(props.mainPatrollers + 1)
     }
 
     function wrightAssignLyle() {
         props.setWrightLyle(true)
         props.setLyleAssignment("patrol")
-        props.wrightPatrollers = props.wrightPatrollers + 1
+        props.setWrightPatrollers(props.wrightPatrollers + 1)
     }
 
     function mainAssignLyle() {
         props.setMainLyle(true)
         props.setLyleAssignment("patrol")
-        props.mainPatrollers = props.mainPatrollers + 1
+        props.setMainPatrollers(props.mainPatrollers + 1)
     }
 
     function colverAssignBobby() {
         props.setColverBobby(true)
         props.setBobbyAssignment("patrol")
-        props.colverPatrollers = props.colverPatrollers + 1
+        props.setColverPatrollers(props.colverPatrollers + 1)
     }
 
     function braxtonAssignBobby() {
         props.setBraxtonBobby(true)
         props.setBobbyAssignment("patrol")
-        props.braxtonPatrollers = props.braxtonPatrollers + 1
+        props.setBraxtonPatrollers(props.braxtonPatrollers + 1)
     }
 
     function colverAssignJohnny() {
         props.setColverJohnny(true)
         props.setJohnnyAssignment("patrol")
-        props.colverPatrollers = props.colverPatrollers + 1
+        props.setColverPatrollers(props.colverPatrollers + 1)
     }
 
     function braxtonAssignJohnny() {
         props.setBraxtonJohnny(true)
         props.setJohnnyAssignment("patrol")
-        props.braxtonPatrollers = props.braxtonPatrollers + 1
+        props.setBraxtonPatrollers(props.braxtonPatrollers + 1)
     }
 
     function colverAssignPete() {
         props.setColverPete(true)
         props.setPeteAssignment("patrol")
-        props.colverPatrollers = props.colverPatrollers + 1
+        props.setColverPatrollers(props.colverPatrollers + 1)
     }
 
     function braxtonAssignPete() {
         props.setBraxtonPete(true)
         props.setPeteAssignment("patrol")
-        props.braxtonPatrollers = props.braxtonPatrollers + 1
+        props.setBraxtonPatrollers(props.braxtonPatrollers + 1)
     }
 
     function colverAssignLyle() {
         props.setColverLyle(true)
         props.setLyleAssignment("patrol")
-        props.colverPatrollers = props.colverPatrollers + 1
+        props.setColverPatrollers(props.colverPatrollers + 1)
     }
 
     function braxtonAssignLyle() {
         props.setBraxtonLyle(true)
         props.setLyleAssignment("patrol")
-        props.braxtonPatrollers = props.braxtonPatrollers + 1
+        props.setBraxtonPatrollers(props.braxtonPatrollers + 1)
     }
 
     function jeffersonAssignBobby() {
         props.setJeffersonBobby(true)
         props.setBobbyAssignment("patrol")
-        props.jeffersonPatrollers = props.jeffersonPatrollers + 1
+        props.setJeffersonPatrollers(props.jeffersonPatrollers + 1)
     }
 
     function booniesAssignBobby() {
         props.setBooniesBobby(true)
         props.setBobbyAssignment("patrol")
-        props.booniesPatrollers = props.booniesPatrollers + 1
+        props.setBooniesPatrollers(props.booniesPatrollers + 1)
     }
 
     function jeffersonAssignJohnny() {
         props.setJeffersonJohnny(true)
         props.setJohnnyAssignment("patrol")
-        props.jeffersonPatrollers = props.jeffersonPatrollers + 1
+        props.setJeffersonPatrollers(props.jeffersonPatrollers + 1)
     }
 
     function booniesAssignJohnny() {
         props.setBooniesJohnny(true)
         props.setJohnnyAssignment("patrol")
-        props.booniesPatrollers = props.booniesPatrollers + 1
+        props.setBooniesPatrollers(props.booniesPatrollers + 1)
     }
 
     function jeffersonAssignPete() {
         props.setJeffersonPete(true)
         props.setPeteAssignment("patrol")
-        props.jeffersonPatrollers = props.jeffersonPatrollers + 1
+        props.setJeffersonPatrollers(props.jeffersonPatrollers + 1)
     }
 
     function booniesAssignPete() {
         props.setBooniesPete(true)
         props.setPeteAssignment("patrol")
-        props.booniesPatrollers = props.booniesPatrollers + 1
+        props.setBooniesPatrollers(props.booniesPatrollers + 1)
     } 
 
     function jeffersonAssignLyle() {
         props.setJeffersonLyle(true)
         props.setLyleAssignment("patrol")
-        props.jeffersonPatrollers = props.jeffersonPatrollers + 1
+        props.setJeffersonPatrollers(props.jeffersonPatrollers + 1)
     }
 
     function booniesAssignLyle() {
         props.setBooniesLyle(true)
         props.setLyleAssignment("patrol")
-        props.booniesPatrollers = props.booniesPatrollers + 1
+        props.setBooniesPatrollers(props.booniesPatrollers + 1)
     }
 
 
@@ -219,6 +218,20 @@ export default function Crew(props) {
     }
 
     function unassignJohnny() {
+        if (props.wrightJohnny === true) {
+            props.wrightPatrollers = props.wrightPatrollers - 1
+        }
+        if (props.mainJohnny === true) {
+            props.mainPatrollers = props.mainPatrollers - 1
+        }
+        if (props.colverJohnny === true) {
+            props.colverPatrollers = props.colverPatrollers - 1
+        }
+        if (props.braxtonJohnny === true) {
+            props.braxtonPatrollers = props.braxtonPatrollers - 1
+        }
+        
+        
         props.setWrightJohnny(false)
         props.setMainJohnny(false)
         props.setColverJohnny(false)
@@ -271,6 +284,7 @@ export default function Crew(props) {
                     {props.wrightPete && <img onClick={unassignPete} className="patrollers" src={Pete} alt="patrol"></img>}
                     {props.wrightLyle && <img onClick={unassignLyle} className="patrollers" src={Lyle} alt="patrol"></img>}
                 </div>
+                
                 {props.wrightStatus !== "lost" && <button onClick={openWright} className="addButton">Add</button>}
                 {wrightAdd && (
                 <div className="row" style={{gap: '2vw'}}>
