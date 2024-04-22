@@ -79,7 +79,12 @@ export default function Container(props) {
     braxtonPatrollers={props.braxtonPatrollers} setBraxtonPatrollers={props.setBraxtonPatrollers}
     booniesPatrollers={props.booniesPatrollers} setBooniesPatrollers={props.setBooniesPatrollers}
     jeffersonPatrollers={props.jeffersonPatrollers} setJeffersonPatrollers={props.setJeffersonPatrollers}
-    
+    wrightRisk={props.wrightRisk} setWrightRisk={props.setWrightRisk}
+    mainRisk={props.mainRisk} setMainRisk={props.setMainRisk}
+    colverRisk={props.colverRisk} setColverRisk={props.setColverRisk}
+    braxtonRisk={props.braxtonRisk} setBraxtonRisk={props.setBraxtonRisk}
+    booniesRisk={props.booniesRisk} setBooniesRisk={props.setBooniesRisk}
+    jeffersonRisk={props.jeffersonRisk} setJeffersonRisk={props.setJeffersonRisk}
 />
 
             {props.bobbyAssignment !== "idle" && props.johnnyAssignment !== "idle" && props.peteAssignment !== "idle" && props.lyleAssignment !== "idle" && (

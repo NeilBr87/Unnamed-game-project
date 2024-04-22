@@ -77,6 +77,12 @@ export default function Debug(props) {
                 {props.booniesBobby === false && <p>The Boonies Bobby: False</p>}
                 {props.booniesJohnny === true && <p>The Boonies Johnny: True</p>}
                 {props.booniesJohnny === false && <p>The Boonies Johnny: False</p>}
+                <p>{props.wrightPatrollers}</p>
+                <p>{props.mainPatrollers}</p>
+                <p>{props.colverPatrollers}</p>
+                <p>{props.braxtonPatrollers}</p>
+                <p>{props.jeffersonPatrollers}</p>
+                <p>{props.booniesPatrollers}</p>
             </div>}
 
             <p></p>

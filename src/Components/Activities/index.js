@@ -9,6 +9,7 @@ import colver from './colver.png'
 import braxton from './braxton.png'
 import jefferson from './jefferson.png'
 import boonies from './boonies.png'
+import Risk from '../Risk'
 import './style.css'
 export default function Crew(props) {
 
@@ -190,22 +191,22 @@ export default function Crew(props) {
 
     function unassignBobby() {
         if (props.wrightBobby === true) {
-            props.wrightPatrollers = props.wrightPatrollers - 1
+            props.setWrightPatrollers(props.wrightPatrollers - 1)
         }
         if (props.mainBobby === true) {
-            props.mainPatrollers = props.mainPatrollers - 1
+            props.setMainPatrollers(props.mainPatrollers - 1)
         }
         if (props.colverBobby === true) {
-            props.colverPatrollers = props.colverPatrollers - 1
+            props.setColverPatrollers(props.colverPatrollers - 1)
         }
         if (props.braxtonBobby === true) {
-            props.braxtonPatrollers = props.braxtonPatrollers - 1
+            props.setBraxtonPatrollers(props.braxtonPatrollers - 1)
         }
         if (props.jeffersonBobby === true) {
-            props.jeffersonPatrollers = props.jeffersonPatrollers - 1
+            props.setJeffersonPatrollers(props.jeffersonPatrollers - 1)
         }
         if (props.booniesBobby === true) {
-            props.booniesPatrollers = props.booniesPatrollers - 1
+            props.setBooniesPatrollers(props.booniesPatrollers - 1)
         }
         props.setWrightBobby(false)
         props.setMainBobby(false)
@@ -219,19 +220,24 @@ export default function Crew(props) {
 
     function unassignJohnny() {
         if (props.wrightJohnny === true) {
-            props.wrightPatrollers = props.wrightPatrollers - 1
+            props.setWrightPatrollers(props.wrightPatrollers - 1)
         }
         if (props.mainJohnny === true) {
-            props.mainPatrollers = props.mainPatrollers - 1
+            props.setMainPatrollers(props.mainPatrollers - 1)
         }
         if (props.colverJohnny === true) {
-            props.colverPatrollers = props.colverPatrollers - 1
+            props.setColverPatrollers(props.colverPatrollers - 1)
         }
         if (props.braxtonJohnny === true) {
-            props.braxtonPatrollers = props.braxtonPatrollers - 1
+            props.setBraxtonPatrollers(props.braxtonPatrollers - 1)
         }
-        
-        
+        if (props.jeffersonJohnny === true) {
+            props.setJeffersonPatrollers(props.jeffersonPatrollers - 1)
+        }
+        if (props.booniesJohnny === true) {
+            props.setBooniesPatrollers(props.booniesPatrollers - 1)
+        }
+
         props.setWrightJohnny(false)
         props.setMainJohnny(false)
         props.setColverJohnny(false)
@@ -242,6 +248,24 @@ export default function Crew(props) {
     }
 
     function unassignPete() {
+        if (props.wrightPete === true) {
+            props.setWrightPatrollers(props.wrightPatrollers - 1)
+        }
+        if (props.mainPete === true) {
+            props.setMainPatrollers(props.mainPatrollers - 1)
+        }
+        if (props.colverPete === true) {
+            props.setColverPatrollers(props.colverPatrollers - 1)
+        }
+        if (props.braxtonPete === true) {
+            props.setBraxtonPatrollers(props.braxtonPatrollers - 1)
+        }
+        if (props.jeffersonPete === true) {
+            props.setJeffersonPatrollers(props.jeffersonPatrollers - 1)
+        }
+        if (props.booniesPete === true) {
+            props.setBooniesPatrollers(props.booniesPatrollers - 1)
+        }            
         props.setWrightPete(false)
         props.setMainPete(false)
         props.setColverPete(false)
@@ -252,6 +276,24 @@ export default function Crew(props) {
     }
 
     function unassignLyle() {
+        if (props.wrightLyle === true) {
+            props.setWrightPatrollers(props.wrightPatrollers - 1)
+        }
+        if (props.mainLyle === true) {
+            props.setMainPatrollers(props.mainPatrollers - 1)
+        }
+        if (props.colverLyle === true) {
+            props.setColverPatrollers(props.colverPatrollers - 1)
+        }
+        if (props.braxtonLyle === true) {
+            props.setBraxtonPatrollers(props.braxtonPatrollers - 1)
+        }
+        if (props.jeffersonLyle === true) {
+            props.setJeffersonPatrollers(props.jeffersonPatrollers - 1)
+        }
+        if (props.booniesLyle === true) {
+            props.setBooniesPatrollers(props.booniesPatrollers - 1)
+        }
         props.setWrightLyle(false)
         props.setMainLyle(false)
         props.setColverLyle(false)
@@ -284,6 +326,16 @@ export default function Crew(props) {
                     {props.wrightPete && <img onClick={unassignPete} className="patrollers" src={Pete} alt="patrol"></img>}
                     {props.wrightLyle && <img onClick={unassignLyle} className="patrollers" src={Lyle} alt="patrol"></img>}
                 </div>
+
+                {props.wrightPatrollers > 0 && (
+                <Risk wrightPatrollers={props.wrightPatrollers} mainPatrollers={props.mainPatrollers} colverPatrollers={props.colverPatrollers} braxtonPatrollers={props.braxtonPatrollers} jeffersonPatrollers={props.jeffersonPatrollers} booniesPatrollers={props.booniesPatrollers} 
+                wrightRisk={props.wrightRisk} setWrightRisk={props.setWrightRisk}
+                colverRisk={props.colverRisk} setColverRisk={props.setColverRisk}
+                mainRisk={props.mainRisk} setMainRisk={props.setMainRisk}
+                braxtonRisk={props.braxtonRisk} setBraxtonRisk={props.setBraxtonRisk}
+                jeffersonRisk={props.jeffersonRisk} setJeffersonRisk={props.setJeffersonRisk}
+                booniesRisk={props.booniesRisk} setBooniesRisk={props.setBooniesRisk} currentRisk="wright"
+                />)}
                 
                 {props.wrightStatus !== "lost" && <button onClick={openWright} className="addButton">Add</button>}
                 {wrightAdd && (
@@ -318,6 +370,17 @@ export default function Crew(props) {
                     {props.mainPete && <img onClick={unassignPete} className="patrollers" src={Pete} alt="patrol"></img>}
                     {props.mainLyle && <img onClick={unassignLyle} className="patrollers" src={Lyle} alt="patrol"></img>}
                 </div>
+                
+                {props.mainPatrollers > 0 && (
+                <Risk wrightPatrollers={props.wrightPatrollers} mainPatrollers={props.mainPatrollers} colverPatrollers={props.colverPatrollers} braxtonPatrollers={props.braxtonPatrollers} jeffersonPatrollers={props.jeffersonPatrollers} booniesPatrollers={props.booniesPatrollers} 
+                wrightRisk={props.wrightRisk} setWrightRisk={props.setWrightRisk}
+                colverRisk={props.colverRisk} setColverRisk={props.setColverRisk}
+                mainRisk={props.mainRisk} setMainRisk={props.setMainRisk}
+                braxtonRisk={props.braxtonRisk} setBraxtonRisk={props.setBraxtonRisk}
+                jeffersonRisk={props.jeffersonRisk} setJeffersonRisk={props.setJeffersonRisk}
+                booniesRisk={props.booniesRisk} setBooniesRisk={props.setBooniesRisk} currentRisk="main"
+                />)}
+                
                 {props.mainStatus !== "lost" && <button onClick={openMain} className="addButton">Add</button>}
                 {mainAdd && (
                 <div className="row" style={{gap: '2vw'}}>
@@ -350,6 +413,17 @@ export default function Crew(props) {
                     {props.colverPete && <img onClick={unassignPete} className="patrollers" src={Pete} alt="patrol"></img>}
                     {props.colverLyle && <img onClick={unassignLyle} className="patrollers" src={Lyle} alt="patrol"></img>}
                 </div>
+
+                {props.colverPatrollers > 0 && (
+                <Risk wrightPatrollers={props.wrightPatrollers} mainPatrollers={props.mainPatrollers} colverPatrollers={props.colverPatrollers} braxtonPatrollers={props.braxtonPatrollers} jeffersonPatrollers={props.jeffersonPatrollers} booniesPatrollers={props.booniesPatrollers} 
+                wrightRisk={props.wrightRisk} setWrightRisk={props.setWrightRisk}
+                colverRisk={props.colverRisk} setColverRisk={props.setColverRisk}
+                mainRisk={props.mainRisk} setMainRisk={props.setMainRisk}
+                braxtonRisk={props.braxtonRisk} setBraxtonRisk={props.setBraxtonRisk}
+                jeffersonRisk={props.jeffersonRisk} setJeffersonRisk={props.setJeffersonRisk}
+                booniesRisk={props.booniesRisk} setBooniesRisk={props.setBooniesRisk} currentRisk="colver"
+                />)}
+
                 {props.colverStatus !== "lost" && <button onClick={openColver} className="addButton">Add</button>}
                 {colverAdd && (
                 <div className="row" style={{gap: '2vw'}}>
@@ -382,6 +456,17 @@ export default function Crew(props) {
                     {props.braxtonPete && <img onClick={unassignPete} className="patrollers" src={Pete} alt="patrol"></img>}
                     {props.braxtonLyle && <img onClick={unassignLyle} className="patrollers" src={Lyle} alt="patrol"></img>}
                 </div>
+
+                {props.braxtonPatrollers > 0 && (
+                <Risk wrightPatrollers={props.wrightPatrollers} mainPatrollers={props.mainPatrollers} colverPatrollers={props.colverPatrollers} braxtonPatrollers={props.braxtonPatrollers} jeffersonPatrollers={props.jeffersonPatrollers} booniesPatrollers={props.booniesPatrollers} 
+                wrightRisk={props.wrightRisk} setWrightRisk={props.setWrightRisk}
+                colverRisk={props.colverRisk} setColverRisk={props.setColverRisk}
+                mainRisk={props.mainRisk} setMainRisk={props.setMainRisk}
+                braxtonRisk={props.braxtonRisk} setBraxtonRisk={props.setBraxtonRisk}
+                jeffersonRisk={props.jeffersonRisk} setJeffersonRisk={props.setJeffersonRisk}
+                booniesRisk={props.booniesRisk} setBooniesRisk={props.setBooniesRisk} currentRisk="braxton"
+                />)}
+
                 {props.braxtonStatus !== "lost" && <button onClick={openBraxton} className="addButton">Add</button>}
                 {braxtonAdd && (
                 <div className="row" style={{gap: '2vw'}}>
@@ -414,6 +499,17 @@ export default function Crew(props) {
                     {props.jeffersonPete && <img onClick={unassignPete} className="patrollers" src={Pete} alt="patrol"></img>}
                     {props.jeffersonLyle && <img onClick={unassignLyle} className="patrollers" src={Lyle} alt="patrol"></img>}
                 </div>
+
+                {props.jeffersonPatrollers > 0 && (
+                <Risk wrightPatrollers={props.wrightPatrollers} mainPatrollers={props.mainPatrollers} colverPatrollers={props.colverPatrollers} braxtonPatrollers={props.braxtonPatrollers} jeffersonPatrollers={props.jeffersonPatrollers} booniesPatrollers={props.booniesPatrollers}
+                wrightRisk={props.wrightRisk} setWrightRisk={props.setWrightRisk}
+                colverRisk={props.colverRisk} setColverRisk={props.setColverRisk}
+                mainRisk={props.mainRisk} setMainRisk={props.setMainRisk}
+                braxtonRisk={props.braxtonRisk} setBraxtonRisk={props.setBraxtonRisk}
+                jeffersonRisk={props.jeffersonRisk} setJeffersonRisk={props.setJeffersonRisk}
+                booniesRisk={props.booniesRisk} setBooniesRisk={props.setBooniesRisk} currentRisk="jefferson"
+                />)}
+
                 {props.jeffersonStatus !== "lost" && <button onClick={openJefferson} className="addButton">Add</button>}
                 {jeffersonAdd && (
                 <div className="row" style={{gap: '2vw'}}>
@@ -446,6 +542,17 @@ export default function Crew(props) {
                     {props.booniesPete && <img onClick={unassignPete} className="patrollers" src={Pete} alt="patrol"></img>}
                     {props.booniesLyle && <img onClick={unassignLyle} className="patrollers" src={Lyle} alt="patrol"></img>}
                 </div>
+
+                {props.booniesPatrollers > 0 && (
+                <Risk wrightPatrollers={props.wrightPatrollers} mainPatrollers={props.mainPatrollers} colverPatrollers={props.colverPatrollers} braxtonPatrollers={props.braxtonPatrollers} jeffersonPatrollers={props.jeffersonPatrollers} booniesPatrollers={props.booniesPatrollers}
+                wrightRisk={props.wrightRisk} setWrightRisk={props.setWrightRisk}
+                colverRisk={props.colverRisk} setColverRisk={props.setColverRisk}
+                mainRisk={props.mainRisk} setMainRisk={props.setMainRisk}
+                braxtonRisk={props.braxtonRisk} setBraxtonRisk={props.setBraxtonRisk}
+                jeffersonRisk={props.jeffersonRisk} setJeffersonRisk={props.setJeffersonRisk}
+                booniesRisk={props.booniesRisk} setBooniesRisk={props.setBooniesRisk} currentRisk="boonies"
+                />)}
+
                 {props.booniesStatus !== "lost" && <button onClick={openBoonies} className="addButton">Add</button>}
                 {booniesAdd && (
                 <div className="row" style={{gap: '2vw'}}>

@@ -66,6 +66,15 @@ export default function OuterContainer() {
     const [jeffersonDays, setJeffersonDays] = useState(0)
     const [jeffersonStatus, setJeffersonStatus] = useState("calm")
 
+    // Risk factors
+
+    const [wrightRisk, setWrightRisk] = useState(0)
+    const [mainRisk, setMainRisk] = useState(0)
+    const [colverRisk, setColverRisk] = useState(0)
+    const [braxtonRisk, setBraxtonRisk] = useState(0)
+    const [booniesRisk, setBooniesRisk] = useState(0)
+    const [jeffersonRisk, setJeffersonRisk] = useState(0)
+    
     // Handling locations
     
     useEffect(() => {
@@ -237,6 +246,13 @@ export default function OuterContainer() {
     braxtonPatrollers={braxtonPatrollers} setBraxtonPatrollers={setBraxtonPatrollers}
     booniesPatrollers={booniesPatrollers} setBooniesPatrollers={setBooniesPatrollers}
     jeffersonPatrollers={jeffersonPatrollers} setJeffersonPatrollers={setJeffersonPatrollers}
+
+    wrightRisk={wrightRisk} setWrightRisk={setWrightRisk}
+    mainRisk={mainRisk} setMainRisk={setMainRisk}
+    colverRisk={colverRisk} setColverRisk={setColverRisk}
+    braxtonRisk={braxtonRisk} setBraxtonRisk={setBraxtonRisk}
+    booniesRisk={booniesRisk} setBooniesRisk={setBooniesRisk}
+    jeffersonRisk={jeffersonRisk} setJeffersonRisk={setJeffersonRisk}
     
 />
     )
